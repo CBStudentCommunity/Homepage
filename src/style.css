@@ -1,0 +1,61 @@
+.maintext {
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	font-style: normal;
+	line-height: normal;
+	font-weight: normal;
+	font-variant: normal;
+}
+body {
+  text-align: center;
+  background-image: url(../images/CB.png);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: #222e2b;
+
+}
+.mainbody {
+	margin-left: 160px;
+}
+.titleblock {
+	background-image: linear-gradient(to bottom, #327da8, #327da8 25%, #e3ded1 25%, #e3ded1 50%, #e3ded1 75%);
+	margin: 10px;
+}
+.menubar {
+  background-color: #327da8;
+	position: fixed;
+	z-index: 1;
+	overflow-x: hidden;
+	width: 160px;
+  padding-left: 2px;
+  padding-right: 2px;
+	height: 100%;
+	text-align: center;
+}
+.menubar a {
+	padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 15px;
+  display: block;
+}
+#menu {
+  align-items: center;
+  text-align: left;
+  padding: 0.5px;
+}
+.textblock {
+	transition: box-shadow 0.5s;
+	flex: 1;
+	background-color: #e3ded1;
+	border-radius: 5px;
+}
+.textblock:hover {
+	box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.25);
+}
+.textblock:first-child {
+  margin-right: 20px;
+}
+.blockholder {
+	display: flex;
+	justify-content: space-between;
+	margin: 10px;
+}

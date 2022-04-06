@@ -1,0 +1,10 @@
+a {
+  color: #3d2245;
+  transition-duration: 0.5s;
+}
+a:visited {
+  color: #3d2245;
+}
+a:hover {
+  color: #6f457a;
+}
