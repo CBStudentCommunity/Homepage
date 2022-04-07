@@ -20,6 +20,7 @@ img {
 	margin-left: 160px;
 }
 .titleblock {
+	border-radius: 5px;
 	background-image: linear-gradient(to bottom, #327da8, #327da8 25%, #e3ded1 25%, #e3ded1 50%, #e3ded1 75%);
 	margin: 10px;
 }
@@ -33,6 +34,7 @@ img {
   padding-right: 2px;
 	height: 100%;
 	text-align: center;
+	border-radius: 5px;
 }
 .menubar a {
 	padding: 6px 8px 6px 16px;
@@ -74,4 +76,7 @@ img {
 }
 .socialContainer {
 	display: inline-block;
+.blanktextBlock {
+	flex: 1;
+	flex-grow: 4;
 }
