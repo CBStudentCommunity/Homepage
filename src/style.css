@@ -13,6 +13,9 @@ body {
   color: #222e2b;
 
 }
+img {
+	margin: 20px;
+}
 .mainbody {
 	margin-left: 160px;
 }
@@ -43,19 +46,23 @@ body {
   padding: 0.5px;
 }
 .textblock {
+	margin: 10px;
 	transition: box-shadow 0.5s;
 	flex: 1;
+	flex-grow: 4;
 	background-color: #e3ded1;
 	border-radius: 5px;
 }
 .textblock:hover {
 	box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.25);
 }
-.textblock:first-child {
-  margin-right: 20px;
-}
 .blockholder {
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: space-between;
 	margin: 10px;
+}
+.break {
+  flex-basis: 100%;
+  height: 25;
 }
