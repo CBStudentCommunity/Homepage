@@ -74,6 +74,8 @@ img {
   margin-right: auto;
   width: 100%;
 }
+.socialContainer {
+	display: inline-block;
 .blanktextBlock {
 	flex: 1;
 	flex-grow: 4;
