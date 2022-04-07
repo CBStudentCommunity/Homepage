@@ -72,3 +72,6 @@ img {
   margin-right: auto;
   width: 100%;
 }
+.socialContainer {
+	display: inline-block;
+}
