@@ -6,12 +6,12 @@
 	font-variant: normal;
 }
 body {
-  text-align: center;
-  background-image: url(../images/CB.png);
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  color: #222e2b;
-
+  	text-align: center;
+  	background-image: linear-gradient(#33333389,#33333389),url(../images/CB.png);
+  	background-repeat: no-repeat;
+ 	background-attachment: fixed;
+ 	color: #222e2b;
+	margin-bottom: 10px;
 }
 img {
 	margin: 20px;
@@ -21,43 +21,54 @@ img {
 }
 .titleblock {
 	border-radius: 5px;
-	background-image: linear-gradient(to bottom, #327da8, #327da8 25%, #e3ded1 25%, #e3ded1 50%, #e3ded1 75%);
-	margin: 10px;
+	background-image: linear-gradient(to bottom, #3a91c4, #327da8 25%, #e3ded1 25%, #e3ded1 50%, #e3ded1 75%);
+	margin: 20px;
+	flex: 1;
+	flex-grow: 3;
 }
 .menubar {
-  background-color: #327da8;
+	background-image: linear-gradient(to bottom, #3a91c4, #327da8 12%, #e3ded1 12%, #e3ded1 50%, #e3ded1 75%);
 	position: fixed;
 	z-index: 1;
 	overflow-x: hidden;
 	width: 160px;
-  padding-left: 2px;
-  padding-right: 2px;
+	padding-left: 0;
+  	padding-right: 0;
 	height: 100%;
 	text-align: center;
 	border-radius: 5px;
 }
 .menubar a {
 	padding: 6px 8px 6px 16px;
-  text-decoration: none;
-  font-size: 15px;
-  display: block;
+  	text-decoration: none;
+  	font-size: 15px;
+  	display: block;
+}
+.menubar img {
+	position: relative;
+	width: 50%;
+}
+.menubar img:hover {
+	transform: scale(1.05);
 }
 #menu {
-  align-items: center;
-  text-align: left;
-  padding: 0.5px;
+  	align-items: center;
+  	text-align: left;
+  	padding: 0.5px;
 }
 .textblock {
-	margin: 10px;
+	margin: 20px;
 	padding: 10px;
-	transition: box-shadow 0.5s;
+	transition: 0.5s;
 	flex: 1;
-	flex-grow: 4;
+	flex-grow: 3;
 	background-color: #e3ded1;
 	border-radius: 5px;
 }
 .textblock:hover {
 	box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.25);
+	background-color: #f0eadd;
+	transform: scale(1.01);
 }
 .blockholder {
 	display: flex;
@@ -71,9 +82,9 @@ img {
 }
 .sidebarImg {
 	display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 100%;
+  	margin-left: auto;
+ 	margin-right: auto;
+  	width: 100%;
 }
 .socialContainer {
 	display: inline-block;
