@@ -6,11 +6,11 @@
 	font-variant: normal;
 }
 body {
-  	text-align: center;
-  	background-image: linear-gradient(#33333389,#33333389),url(../images/CB.png);
-  	background-repeat: no-repeat;
+  text-align: center;
+  background-image: linear-gradient(#33333389,#33333389),url(../images/CB.png);
+  background-repeat: no-repeat;
  	background-attachment: fixed;
- 	color: #222e2b;
+ 	color: #e5e9f0;
 	margin-bottom: 10px;
 }
 img {
@@ -21,13 +21,13 @@ img {
 }
 .titleblock {
 	border-radius: 5px;
-	background-image: linear-gradient(to bottom, #3a91c4, #327da8 25%, #e3ded1 25%, #e3ded1 50%, #e3ded1 75%);
+	background-image: linear-gradient(to bottom, #88c0d0, #88c0d0 25%, #3b4252 25%, #3b4252 50%, #3b4252 75%);
 	margin: 20px;
 	flex: 1;
 	flex-grow: 3;
 }
 .menubar {
-	background-image: linear-gradient(to bottom, #3a91c4, #327da8 12%, #e3ded1 12%, #e3ded1 50%, #e3ded1 75%);
+	background-color: #3b4252;
 	position: fixed;
 	z-index: 1;
 	overflow-x: hidden;
@@ -62,12 +62,12 @@ img {
 	transition: 0.5s;
 	flex: 1;
 	flex-grow: 3;
-	background-color: #e3ded1;
+	background-color: #3b4252;
 	border-radius: 5px;
 }
 .textblock:hover {
 	box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.25);
-	background-color: #f0eadd;
+	background-color #3b4252;
 	transform: scale(1.01);
 }
 .blockholder {
