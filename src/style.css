@@ -74,6 +74,7 @@ img {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
+	flex-direction: row;
 	margin: 10px;
 }
 .break {
@@ -89,8 +90,8 @@ img {
 .socialContainer {
 	display: inline-block;
 }
-.blanktextBlock {
+.blanktextblock {
 	flex: 1;
 	flex-grow: 4;
-	padding: 10px;
+	border-radius: 5px;
 }
