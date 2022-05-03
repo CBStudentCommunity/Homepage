@@ -20,11 +20,11 @@ img {
 	margin-left: 160px;
 }
 .titleblock {
+	display: block;
+	overflow: hidden;
 	border-radius: 5px;
-	background-image: linear-gradient(to bottom, #88c0d0, #88c0d0 25%, #3b4252 25%, #3b4252 50%, #3b4252 75%);
+	background-image: linear-gradient(to bottom, #9dd7e6, #7CAEBB 25%, #3b4252 25%, #3b4252 50%, #3b4252 75%);
 	margin: 20px;
-	flex: 1;
-	flex-grow: 3;
 }
 .menubar {
 	background-color: #3b4252;
@@ -33,28 +33,39 @@ img {
 	overflow-x: hidden;
 	width: 160px;
 	padding-left: 0;
-  	padding-right: 0;
+  padding-right: 0;
 	height: 100%;
 	text-align: center;
 	border-radius: 5px;
 }
-.menubar a {
-	padding: 6px 8px 6px 16px;
-  	text-decoration: none;
-  	font-size: 15px;
-  	display: block;
+.item {
+	padding: 6px 6px 0px 16px;
+  text-decoration: none;
+  font-size: 15px;
+  display: block;
+}
+.item:hover {
+	background-color: #3E4656;
+	color: #7CAEBB;
+}
+.menubar a:hover ::before {
+	content: '> ';
+}
+a:hover ::before {
+	content: '> ';
 }
 .menubar img {
 	position: relative;
 	width: 50%;
+	transition: 0.2s;
 }
 .menubar img:hover {
 	transform: scale(1.05);
 }
 #menu {
-  	align-items: center;
-  	text-align: left;
-  	padding: 0.5px;
+  align-items: center;
+ 	text-align: left;
+ 	padding: 0.5px;
 }
 .textblock {
 	margin: 20px;
@@ -66,9 +77,9 @@ img {
 	border-radius: 5px;
 }
 .textblock:hover {
+	background-color #4E5463;
 	box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.25);
-	background-color #3b4252;
-	transform: scale(1.01);
+	transform: scale(1.02);
 }
 .blockholder {
 	display: flex;
