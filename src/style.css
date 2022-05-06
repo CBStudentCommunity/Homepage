@@ -17,7 +17,11 @@ img {
 	margin: 20px;
 }
 .mainbody {
-	margin-left: 160px;
+	margin-left: 170px;
+	height: 90%;
+	bottom: 90%;
+	background-color: rgba(46, 52, 64, 0.75);
+	padding: 2px;
 }
 .titleblock {
 	display: block;
@@ -37,6 +41,10 @@ img {
 	height: 100%;
 	text-align: center;
 	border-radius: 5px;
+}
+.menublock {
+	border-top: 1px solid;
+	border-bottom: 1px solid;
 }
 .menubar a {
 	padding: 6px 6px 0px 16px;
@@ -70,7 +78,7 @@ img {
 	border-radius: 5px;
 }
 .textblock:hover {
-	background-color #4E5463;
+	background-color: #4E5463;
 	box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.25);
 	transform: scale(1.02);
 }
