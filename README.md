@@ -6,4 +6,4 @@ A website full of resources, tips, tricks and tools for CB students, by CB stude
 If you want to contribute to the website, go check out [contributing.md](contributing.md)
   
 # The website itself
-check out the website at [cbstudents.ca](www.cbstudents.ca)
+check out the website at [cbstudents.ca](https://www.cbstudents.ca)
