@@ -34,10 +34,10 @@ img {
 }
 #bodybox {
 	display: flex;
-	
 }
 .mainbody {
 	padding: 2px;
+	width: 100%;
 }
 .topbar {
 	height: 80px;
@@ -57,7 +57,7 @@ img {
 }
 .menubar {
 	background-color: var(--bg-colour);
-	flex-basis: 175px;
+	flex-basis: 200px;
 	text-align: center;
 	border-radius: 1px;
 }
