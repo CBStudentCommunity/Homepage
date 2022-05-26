@@ -32,10 +32,11 @@ body {
 img {
 	margin: 20px;
 }
+#bodybox {
+	display: flex;
+	
+}
 .mainbody {
-	margin-left: 165px;
-	height: 90%;
-	bottom: 90%;
 	padding: 2px;
 }
 .topbar {
@@ -56,13 +57,7 @@ img {
 }
 .menubar {
 	background-color: var(--bg-colour);
-	z-index: 1;
-	overflow-x: hidden;
-	width: 165px;
-	position: absolute;
-	padding-left: 0;
-  padding-right: 0;
-	height: 120%;
+	flex-basis: 175px;
 	text-align: center;
 	border-radius: 1px;
 }
