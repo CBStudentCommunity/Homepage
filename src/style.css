@@ -48,6 +48,10 @@ img {
 	display: flex;
 	align-items: center;
 }
+.topbar img {
+	height: 70px;
+	width: 70px;
+}
 .titleblock {
 	display: block;
 	overflow: hidden;
@@ -112,8 +116,12 @@ img {
   flex-basis: 100%;
   height: 25;
 }
-.sidebarImg {display: block; top: 10%; position: relative;}
-.sidebarImg img {vertical-align: bottom;}
+.sidebarImg {
+	display: block; 
+	/*top: 5%;*/ 
+	position: relative;
+}
+.sidebarImg img {}
 .toptext {display: block;}
 .socialContainer {
 	display: inline-block;
