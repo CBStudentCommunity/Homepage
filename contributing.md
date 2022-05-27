@@ -1,5 +1,4 @@
 # Contributing.md
-## So you want to help  
 If you want to help us build and improve our website, here are some things you can do
 
 You can:
