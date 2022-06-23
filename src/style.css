@@ -22,9 +22,9 @@ html, body {
 	font-variant: normal;
 }
 body {
-  text-align: center;
-  background-image: linear-gradient(rgba(22, 19, 32, 0.75), rgba(22, 19, 32, 0.75)),url(../images/CB.webp);
-  background-repeat: no-repeat;
+	text-align: center;
+	background-image: linear-gradient(rgba(22, 19, 32, 0.75), rgba(22, 19, 32, 0.75)),url(../images/CB.webp);
+	background-repeat: no-repeat;
  	background-attachment: fixed;
  	color: var(--text-colour);
 	margin-bottom: 10px;
