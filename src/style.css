@@ -23,7 +23,7 @@ html, body {
 }
 body {
   text-align: center;
-  background-image: linear-gradient(rgba(22, 19, 32, 0.75), rgba(22, 19, 32, 0.75)),url(../images/CB.png);
+  background-image: linear-gradient(rgba(22, 19, 32, 0.75), rgba(22, 19, 32, 0.75)),url(../images/CB.webp);
   background-repeat: no-repeat;
  	background-attachment: fixed;
  	color: var(--text-colour);
