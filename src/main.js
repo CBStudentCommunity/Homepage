@@ -1,17 +1,29 @@
 // JavaScript Document
-function rollover() {
-	document.getElementById("rollImg").src='images/cssLogo.png'
 
+//blog list
+const blog = ['news/examplepost.html', 'news/test.html' , 'news/test-two.html']
+//reads blog posts and stores them in variable
+async function getBlogPost(url) {
+	const response = await fetch(url)
+	var post = await response.text();
+	console.log(post)
+	show(post)
+	console.log("post rendered")
 }
-function rollback() {
-	document.getElementById("rollImg").src='images/htmlLogo.png'
 
+//renders html
+function show(data) {
+	var post = document.createElement('div');
+	post.className = "textblock";
+	document.getElementById('blogger').appendChild(post);
+	post.innerHTML = data;
 }
-function openmenu() {
-  document.getElementById("menubar").style.width = "200px";
-	//document.getElementById("openbtn").style.opacity = "0";
+
+//renders blog
+function writeBlog (post) {
+	for (let i in post) {
+		getBlogPost(post[i]);
+	}
 }
-function closemenu() {
-  document.getElementById("menubar").style.width = "0";
-	//document.getElementById("openbtn").style.opacity = "1";
-}
+
+writeBlog(blog)
