@@ -121,7 +121,9 @@ img {
 	/*top: 5%;*/ 
 	position: relative;
 }
-.sidebarImg img {}
+.sidebarImg img {
+	background-color: rgba(0, 0, 0, 0);
+}
 .toptext {display: block;}
 .socialContainer {
 	display: inline-block;
@@ -129,4 +131,10 @@ img {
 .blanktextblock {
 	flex: 1;
 	flex-grow: 4;
+}
+
+iframe {
+	padding: 5px;
+	border: none;
+	width: 100%;
 }
