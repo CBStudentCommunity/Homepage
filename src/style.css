@@ -44,7 +44,6 @@ img {
 	text-align: left;
 	background-color: var(--bg-colour);
 	padding: 1px;
-	margin: 5px;
 	display: flex;
 	align-items: center;
 }
