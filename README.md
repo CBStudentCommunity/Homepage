@@ -12,7 +12,7 @@ check out the website at [cbstudents.ca](https://www.cbstudents.ca)
 
 All licenses availible in /Licenses/
 
-Copyright (C) 2022  Phoenix Barr and Micheal Ward
+Copyright (C) 2022  Phoenix Barr and Michael Ward
 
         This program is free software: you can redistribute it and/or modify
         it under the terms of the GNU Affero General Public License as
