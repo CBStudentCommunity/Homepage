@@ -1,0 +1,3 @@
+# nodejs packages("npm i" to install, instructions in ./blog/README.md)
+./blog/node_modules/
+./blog/package-lock.json
