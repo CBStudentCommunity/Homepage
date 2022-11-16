@@ -7,12 +7,13 @@ html, body {
 }
 
 :root {
-	--bg-colour: #212121;
-	--bg-light: #484848;
-	--text-colour: #ffffff;
-	--text-dark: #ffffff;
-	--text-accent: #ffffff;
-	--accent: #2962ff;
+	--bg-colour: #1F1F1F;
+	--bg-light: #28292A;
+	--menu: #2D2F31;
+	--text-colour: #f0f0f0;
+	--text-dark: #f0f0f0;
+	--text-accent: #f0f0f0;
+	--accent: #1565c0;
 }
 .maintext {
 	font-family: 'Rubik', sans-serif;
@@ -25,12 +26,17 @@ html, body {
 body {
 	text-align: center;
 	/*background-image: linear-gradient(rgba(22, 19, 32, 0.75), rgba(22, 19, 32, 0.75)),url(../images/CB.png);*/
-	background-color: #000000;
+	background-color: var(--bg-colour);
 	background-repeat: no-repeat;
  	background-attachment: fixed;
  	color: var(--text-colour);
 	margin-bottom: 10px;
 }
+
+div {
+	border-radius: 10pt;
+}
+
 img {
 	margin: 20px;
 }
@@ -42,12 +48,13 @@ img {
 	width: 100%;
 }
 .topbar {
-	height: 80px;
+	height: 60px;
 	text-align: left;
-	background-color: var(--bg-colour);
+	background-color: var(--bg-light);
 	padding: 1px;
 	display: flex;
 	align-items: center;
+	margin-bottom: 10pt;
 }
 .topbar img {
 	height: 70px;
@@ -56,19 +63,17 @@ img {
 .titleblock {
 	display: block;
 	overflow: hidden;
-	border-radius: 1px;
-	background-image: linear-gradient(to bottom, var(--accent), var(--accent) 25%, var(--bg-colour) 25%, var(--bg-colour) 50%);
-	margin: 3px;
+	background-image: linear-gradient(to bottom, var(--accent), var(--accent) 25%, var(--bg-light) 25%, var(--bg-light) 50%);
+	margin: 10pt;
+	margin-top: 0px;
 }
 .menubar {
-	background-color: var(--bg-colour);
+	background-color: var(--menu);
 	flex-basis: 200px;
 	text-align: center;
-	border-radius: 1px;
 }
 .menublock {
-	border-top: 1px solid;
-	border-bottom: 1px solid;
+	border-radius: 0pt;
 }
 .menubar a {
 	padding: 6px 6px 0px 16px;
@@ -76,8 +81,8 @@ img {
   font-size: 14px;
   display: block;
 }
-.menubar a:hover ::before {
-	content: '> ';
+.menubar h5 {
+	padding: 6px 6px 0px 16px;
 }
 .menubar img {
 	position: relative;
@@ -90,16 +95,25 @@ img {
 #menu {
   align-items: center;
  	text-align: left;
- 	padding: 0.5px;
+ 	padding: 1px;
 }
 .textblock {
-	margin: 3px;
+	margin: 10px;
+	text-align: left;
 	padding: 10px;
 	transition: 0.5s;
 	flex: 1;
 	flex-grow: 3;
-	background-color: var(--bg-colour);
-	border-radius: 1px;
+	background-color: var(--bg-light);
+}
+.centertext {
+	margin: 10px;
+	text-align: center;
+	padding: 10px;
+	transition: 0.5s;
+	flex: 1;
+	flex-grow: 1;
+	background-color: var(--bg-light);
 }
 .blockholder {
 	display: flex;
@@ -130,6 +144,7 @@ img {
 	display: inline-block;
 }
 .blanktextblock {
+	margin: 5pt;
 	flex: 1;
 	flex-grow: 4;
 }

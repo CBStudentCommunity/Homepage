@@ -1,12 +1,12 @@
 a {
-  color: #C9CBFF;
+  color: #156fff;
   transition-duration: 0.5s;
 }
 a:visited {
-  color: #C9CBFF;
+  color: #156fff;
 }
 a:hover {
-  color: #DDB6F2;
+  color: #1f6fff;
 }
 html {
   scroll-behavior: smooth;
