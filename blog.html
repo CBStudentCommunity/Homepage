@@ -3,7 +3,7 @@
   <head>
     <title>CBSC</title>
     <meta name="description" content="School Newspaper and blog" />
-    <link rel="stylesheet" href="src/style.css"/>
+    <link rel="stylesheet" href="src/desktop.css"/>
   </head>
   <body>
     <div id="navbar">
@@ -23,6 +23,19 @@
     <script src="https://unpkg.com/lucide@latest"></script>
     <script>
       lucide.createIcons();
+    </script>
+    <script>
+      var theme = document.getElementsByTagName("link")[0];
+      if (
+        navigator.userAgent.match(/Android/i) ||
+        navigator.userAgent.match(/iPhone/i)
+      ) {
+        theme.setAttribute("href", "src/mobile.css");
+        console.log("Set CSS to Mobile");
+      } else {
+        theme.setAttribute("href", "src/desktop.css");
+        console.log("Set CSS to Desktop");
+      }
     </script>
     </body>
     </html>

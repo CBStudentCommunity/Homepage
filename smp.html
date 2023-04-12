@@ -3,7 +3,7 @@
   <head>
     <title>CBSC</title>
     <meta name="description" content="Minecraft Information" />
-    <link rel="stylesheet" href="src/style.css" />
+    <link rel="stylesheet" href="src/desktop.css" />
   </head>
   <body>
     <div id="navbar">
@@ -21,13 +21,9 @@
       <h1 style="color: #dedede">CougarCraft, the CBSC Minecraft Server</h1>
       <div id="directory"></div>
     </div>-->
-      <div style="text-align: center; padding: 1%;">
-      <img
-        src="img/CBMC-Logo.jpg"
-        alt="discord logo"
-        width="15%"
-      />
-      </div>
+    <div style="text-align: center; padding: 1%">
+      <img src="img/CBMC-Logo.jpg" alt="discord logo" width="15%" />
+    </div>
     <h1 style="text-align: center">
       Come join fellow Students on the Colonel By Minecraft Server!
     </h1>
@@ -67,23 +63,34 @@
       </div>
       <div class="box">
         <h3>Explore</h3>
-        <img src="img/mcPic3.png" alt="A shot of a mountain and the forest below" width="75%" />
-        <p>Minecraft worlds are always vast and amazing, and we choose the world we're using just for that purpose. Full of mountain ranges, vallies and rivers, there is no limit to interesting terrain to explore</p>
+        <img
+          src="img/mcPic3.png"
+          alt="A shot of a mountain and the forest below"
+          width="75%"
+        />
+        <p>
+          Minecraft worlds are always vast and amazing, and we choose the world
+          we're using just for that purpose. Full of mountain ranges, vallies
+          and rivers, there is no limit to interesting terrain to explore
+        </p>
       </div>
       <div class="box">
         <h3>Socialize</h3>
         <img src="img/mcPic4.png" alt="AntiSocial-ness" width="75%" />
-        <p>Whether peaceful or combative, there are many ways to interact with fellow students</p>
+        <p>
+          Whether peaceful or combative, there are many ways to interact with
+          fellow students
+        </p>
       </div>
     </div>
     <div id="comunicationsBox" class="box" style="height: auto; padding: 2%">
-      <a href="https://docs.google.com/forms/d/e/1FAIpQLSc-U5Mp3PD_iYifAFs4Oo7MsYrkbx3tLf1TEGgQL3LoISGv_Q/viewform?usp=sf_link" target="_blank"><h1 style="color: #dbb32d;">Join</h1></a>
+      <a
+        href="https://docs.google.com/forms/d/e/1FAIpQLSc-U5Mp3PD_iYifAFs4Oo7MsYrkbx3tLf1TEGgQL3LoISGv_Q/viewform?usp=sf_link"
+        target="_blank"
+        ><h1 style="color: #dbb32d">Join</h1></a
+      >
       <div style="padding: 1%">
-        <img
-          src="img/discord-mark-white.svg"
-          alt="discord logo"
-          width="8%"
-        />
+        <img src="img/discord-mark-white.svg" alt="discord logo" width="8%" />
       </div>
       <p>
         If you want to join or learn more about the CBSC Minecraft server, check
@@ -94,8 +101,18 @@
     <script>
       lucide.createIcons();
     </script>
-    <script src="src/main.js">
-      mobileCSS();
+    <script>
+      var theme = document.getElementsByTagName("link")[0];
+      if (
+        navigator.userAgent.match(/Android/i) ||
+        navigator.userAgent.match(/iPhone/i)
+      ) {
+        theme.setAttribute("href", "src/mobile.css");
+        console.log("Set CSS to Mobile");
+      } else {
+        theme.setAttribute("href", "src/desktop.css");
+        console.log("Set CSS to Desktop");
+      }
     </script>
   </body>
 </html>
