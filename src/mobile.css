@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&family=Quicksand:wght@500&display=swap');
+:root {
+  --bg0: #181818; /*Main BG*/
+  --bg1: #252525; /*Alt BG*/
+  --fg0: #b9b9b9; /*Main FG*/
+  --fg1: #dedede; /*Alt FG*/
+  --highlight0: #368aeb; /*Dark*/
+  --highlight1: #3fc5b7; /*Light*/
+  --altlight0: #70b433;
+  --link: #dbb32d;
+}
+
+/*Reset CSS*/
+div {
+  margin: 0;
+	padding: 0;
+	border: 0;
+  border-radius: 5px;
+}
+img {
+  margin: 0;
+	padding: 0;
+	border: 0;
+  border-radius: 5px;
+}
+/*Set Styles*/
+
+html {
+  background-color: var(--bg0);
+  color: var(--fg0);
+  font-family: "Josefin Sans", sans-serif;
+}
+a {
+  color: var(--link);
+}
+a:after {
+  color: var(--link);
+}
+p {
+  font-size: 18px;
+}
+h1 {
+  color: var(--highlight0);
+}
+h2 {
+  color: var(--highlight1);
+}
+#titlebox {
+    background-image: url(/img/CB.png);
+    margin: 1px;
+    width: auto;
+    height: auto;
+    padding: 5%;
+    background-position-y: center; 
+    background-repeat: no-repeat;
+    background-size: auto;
+}
+#navbar {
+  background-color: var(--bg1);
+  width: 100%;
+  overflow: auto;
+  margin: 5px;
+}
+#navbar a {
+  float: left;
+  text-decoration: none;
+  text-align: center;
+  padding: 12px;
+  font-size: 16px;
+}
+#navbar a:hover {
+  background-color: var(--bg0);
+  cursor: pointer;
+}
+#mc {
+  color: var(--altlight0);
+}
+.icon {
+  height: 20px;
+  color: var(--fg1);
+  padding-right: 5px;
+  vertical-align: bottom;
+}
+.boxList {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.box {
+  background-color: var(--bg1);
+  padding: 1%;
+  text-align: center;
+  margin: 1%;
+}
+.Blogbox {
+  background-color: var(--bg1);
+  width: 80%;
+  padding: 1%;
+  text-align: center;
+  margin: auto;
+  margin-top: 1%;
+  margin-bottom: 1%;
+}
+.descbox {
+    width: 40%;
+  background-color: var(--bg0);
+  text-align: center;
+  margin: 1%;
+}
