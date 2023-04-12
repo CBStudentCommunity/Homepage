@@ -1,77 +1,70 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>CB Student Homepage</title>
-    <link href="src/style.css" rel="stylesheet"/>
-    <link href="src/links.css" rel="stylesheet"/>
+    <title>CBSC</title>
+    <meta name="description" content="Our first page" />
+    <link rel="stylesheet" href="src/style.css" />
   </head>
-
-<body class="maintext">
-  <div class="topbar">
-    <div class="sidebarImg"><img src="images/logo.png"/></div>
-    <div class="toptext"><h3>CB Student Community</h3></div>
-  </div>
-  <div id="bodybox">
-  <div id="menu" class="menubar">
-    <div class="menublock"> 
-      <a href="index.html" ><p>Home</p></a>
-      <a href="about.html" ><p>About</p></a>
+  <body>
+    <div id="navbar">
+      <a href="index.html"><i icon-name="home" class="icon"></i>Home</a>
+      <a href="blog.html"><i icon-name="newspaper" class="icon"></i>News</a>
+      <a href="tools.html"><i icon-name="package" class="icon"></i>Tools</a>
+      <a href="smp.html" id="mc"><i icon-name="sword" class="icon"></i>Minecraft</a>
     </div>
-      <h5>Information</h5>
-    <div class="menublock">
-      <a href="tools.html" ><p>Resources/Tools</p></a>
-      <a href="blog.html" ><p>Blog</p></a>
-      <a href="communication.html" ><p>Communications</p></a>
+    <div id="titlebox">
+      <h1 style="color: #dedede">Colonel By Student Community</h1>
+      <div id="directory"></div>
     </div>
-  </div>
-  <div class="mainbody">
-    <div class="titleblock">
-      <p>&nbsp;</p>
-      <h1>CB Student Homepage</h1>
-      <h3>Built by students for students</h3>
-      <p>&nbsp;</p>
-    </div>
-    <div class="homeholder">
-      <div class="textblock">
-        <p>Welcome to Colonel By's Student Homepage,<br> containing a growing library of resources for students,<br> as well as a blog with information on useful tools, tips and tricks that students can use in their day to day lives, and at school.</p>
-        <h3>Please note that this website is under construction, but still have some information that students can still use. <br> If you encounter a bug or problem, you can open an <a href="https://github.com/CBStudentCommunity/Homepage">issue</a> on our github page</h3>
+    <div class="boxList">
+      <div class="descbox">
+        <h2>Welcome to the Colonel By Student Community Website!</h2>
+        <p>
+          You can find tools, info, and communications platforms related and
+          dedicated to the Colonel By Student Community here, as well as
+          information on our school minecraft server
+        </p>
       </div>
-
-      <div class="centertext" class="textblock">
-        <h4>Quick links</h4>
-        <a href="tools.html"><p>Tools and Resources</p></a>
-        <a href="communication.html"><p>Communication tools</p></a>
-        <a href="about.html"><p>About the Website</p></a>
-        <a href="blog.html"><p>Development Blog</p></a>
-      </div>
-      <div class="break"></div>
-      <div class="centertext">
-        <h3>Talk to us!</h3>
-        <p>You can chat with us and the rest of the CB community on our discord, revolt and matrix servers!</p>
-        <div class="socialContainer">
-          <a href="https://matrix.to/#/!pIToJmNPMQHSOynNzb:matrix.org?via=matrix.org">
-            <img src="images/Matrix_icon.png" height="150">
-          </a>
-          <a href="guides/matrix.html"><p>Matrix setup guide</p></a>
-        </div>
-        <div class="socialContainer">
-          <a href="https://discord.gg/7BXbgB8vGN">
-            <img src="images/Discord_logo.png" height="150">
-          </a>
-          <a href="guides/discord.html"><p>Discord setup guide</p></a>
-        </div>
-        <div class="socialContainer">
-          <a href="https://app.revolt.chat/invite/nj2wPekG">
-            <img src="images/Revolt_logo.png" height="150">
-          </a>
-          <a href="guides/revolt.html"><p>Revolt setup guide</p></a>
-        </div>
+      <div class="descbox">
+        <h2>Who we are</h2>
+        <p>
+          We are a group of students focused on creating an interconnected
+          online community for the Students of Colonel By Secondary School
+        </p>
+        <p>We are, and will always be For Students, By Students</p>
       </div>
     </div>
-  </div>
-<script src="https://unpkg.com/lucide@latest"></script>
-<script>
-  lucide.createIcons();
-</script>
-</body>
+    <div class="boxList">
+      <div class="box" style="width: 10%">
+        <a href="blog.html"><h3>Blog + Newspaper</h3></a>
+      </div>
+      <div class="box" style="width: 10%;">
+        <a href="smp.html" style="color: #70b433;"><h3>Minecraft Server</h3></a>
+      </div>
+      <div class="box" style="width: 10%">
+        <a href="tools.html"><h3>Tools + Guides</h3></a>
+      </div>
+    </div>
+    <div id="comunicationsBox" class="box" style="height: auto; padding: 2%">
+      <h3>Come chat with fellow students on the CBSC Discord Server!</h3>
+      <div style="padding: 1%">
+        <img
+          src="img/discord-mark-white.svg"
+          alt="discord logo"
+          height="10%"
+          width="10%"
+        />
+      </div>
+      <p>
+        To fully experience all that the CBSC has to offer, join our discord
+        server to chat with students, get homework help and access to our
+        minecraft server
+      </p>
+      <p>A form will be up soon for joining the discord server, but if you want to join, please get in touch with Michael or Pheonix through school</p>
+    </div>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+      lucide.createIcons();
+    </script>
+  </body>
 </html>
