@@ -1,5 +1,5 @@
 # Contribution guidelines
-Anyone is free to contribute! We would reccomend joining the Discord to collaborate with other contributors. Check the issues!
+Anyone is free to contribute! We would recommend joining the Discord to collaborate with other contributors. Check the issues!
 
 ## Bug fixes and optimisations
 These involve minor changes to the codebase and are tagged with "bug"
