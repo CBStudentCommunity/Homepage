@@ -1,5 +1,4 @@
 // Blog Rendering Tool
-
 // blog posts
 const bloglist = ['blog/cbsmp.html', 'blog/Welcome.html'];
 // position in blog post list
