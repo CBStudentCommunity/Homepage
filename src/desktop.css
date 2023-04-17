@@ -46,6 +46,7 @@ h1 {
 h2 {
   color: var(--highlight1);
 }
+
 #titlebox {
     background-image: url(/img/CB.png);
     margin: 1px;
@@ -53,9 +54,33 @@ h2 {
     height: auto;
     padding: 5%;
     background-position-y: center; 
-    background-repeat: no-repeat;
+    background-repeat: repeat-x;
     background-size: auto;
+/*Homepage animation code*/
+      -webkit-animation: slidein 60s;
+      animation: slidein 60s;
+
+      -webkit-animation-fill-mode: forwards;
+      animation-fill-mode: forwards;
+
+      -webkit-animation-iteration-count: infinite;
+      animation-iteration-count: infinite;
+
+      -webkit-animation-direction: alternate;
+      animation-direction: alternate;             
 }
+
+@-webkit-keyframes slidein {
+from {background-position-x: right; background-size:150%; }
+to {background-position-x: -100px 0px;background-size:150%;}
+}
+
+@keyframes slidein {
+from {background-position-x: right;background-size:150%; }
+to {background-position-x: -100px 0px;background-size:150%;}
+
+}
+/*^homepage scrolling background animation^*/
 #navbar {
   background-color: var(--bg1);
   width: 100%;
@@ -72,7 +97,9 @@ h2 {
 #navbar a:hover {
   background-color: var(--bg0);
   cursor: pointer;
+  transition-duration:.2s;
 }
+
 #mc {
   color: var(--altlight0);
 }
