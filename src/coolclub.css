@@ -1,0 +1,36 @@
+.clubarchive {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit,minmax(360px,1fr));
+    grid-auto-rows: 240px;
+}
+
+.club {
+    background-color: grey;
+    border-radius:2px;
+    align-items:center;
+    justify-content: center;
+    background-size:cover;
+    background-position:center;
+    background-repeat: no-repeat;
+    transition: all 250ms;
+    box-shadow:rgba(0,0,0,.1) 0px,;
+}
+
+@media screen and (min-width:600px){
+
+    .club:nth-child(3n+0){
+        grid-column: span 2 / auto;
+    }
+    .club:nth-child(4n+0){
+        grid-row: span 2/ auto;
+    }
+    .club:nth-child(6n+0){
+        grid-row: span 2 / auto;
+    }
+
+}
+
+.club:hover{
+    transform:scale(1.1);
+}
