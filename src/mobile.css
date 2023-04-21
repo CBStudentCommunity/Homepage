@@ -58,6 +58,8 @@ h2 {
     background-size: auto;
 }
 #navbar {
+  display: flex;
+  flex-direction: column;
   background-color: var(--bg1);
   width: 100%;
   overflow: auto;
@@ -76,6 +78,19 @@ h2 {
 }
 #mc {
   color: var(--altlight0);
+}
+.navbutton {
+  text-align: center;
+  padding: 12px;
+}
+.navbutton a {
+  font-size: 16px;
+  text-decoration: none;
+}
+.navbutton a:hover {
+  background-color: var(--bg0);
+  cursor: pointer;
+  transition-duration:.2s;
 }
 .icon {
   height: 20px;
