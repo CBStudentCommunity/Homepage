@@ -30,6 +30,7 @@ html {
   background-color: var(--bg0);
   color: var(--fg0);
   font-family: "Josefin Sans", sans-serif;
+  text-align: center;
 }
 a {
   color: var(--link);
@@ -84,18 +85,21 @@ h2 {
 }
 .boxList {
   display: flex;
+  align-items: center;
   flex-direction: column;
-  justify-content: center;
 }
 .box {
   background-color: var(--bg1);
+  width: 90%;
   padding: 1%;
   text-align: center;
-  margin: 1%;
+  margin: auto;
+  margin-top: 1%;
+  margin-bottom: 1%;
 }
 .Blogbox {
   background-color: var(--bg1);
-  width: 80%;
+  width: 97%;
   padding: 1%;
   text-align: center;
   margin: auto;
@@ -103,7 +107,7 @@ h2 {
   margin-bottom: 1%;
 }
 .descbox {
-    width: 40%;
+  width: 40%;
   background-color: var(--bg0);
   text-align: center;
   margin: 1%;
