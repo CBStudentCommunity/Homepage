@@ -7,12 +7,12 @@ const clubList = ['clubHub/testclub.html', 'worthlessUrl']
 //position in club list
 var advance = 0;
 
-function createClub() {
+function renderClub() {
 
     //renders 4 clubs
     for(let i = 0; i <= 3 && advance <= clubList.length - 1; i++){
 
-        let sect = document.getElementById(poutine);
+        let sect = document.getElementById('poutine');
         let create = sect.createElement('div');
         let inScript = sect.createElement('script');
         create.className = 'club';
@@ -24,8 +24,16 @@ function createClub() {
                 })
             })`;
         create.appendChild(inScript);
-        document.getElementById('').appendChild(create)
+        document.getElementById('poutine').appendChild(create)
         advance++
     }
 	
 }
+
+renderClub()
+
+document.addEventListener('scroll', () => {
+    if(document.getElementById('bottom').offsetParent != null) {
+        renderClub
+    }
+})
