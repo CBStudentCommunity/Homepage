@@ -130,6 +130,13 @@ to {background-position-x: -100px 0px;background-size:150%;}
   margin-top: 1%;
   margin-bottom: 1%;
 }
+.mcbox {
+  background-color: var(--bg1);
+  /*width: 10%;*/
+  padding: 1%;
+  text-align: center;
+  margin: 1%;
+}
 .Blogbox {
   background-color: var(--bg1);
   width: 80%;
