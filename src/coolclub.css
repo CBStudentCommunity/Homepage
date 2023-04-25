@@ -17,7 +17,7 @@
     box-shadow:rgba(0,0,0,.1) 0px,;
 }
 
-@media screen and (min-width:600px){
+@media screen and (pointer:none),(pointer:coarse) {
 
     .club:nth-child(3n+0){
         grid-column: span 2 / auto;

@@ -32,6 +32,47 @@ html {
   font-family: "Josefin Sans", sans-serif;
   text-align: center;
 }
+
+/* Add Media Queries for Responsive Design */
+@media screen and (max-width: 768px) {
+  /* Styles for screens with width up to 768px (e.g. mobile devices) */
+  #titlebox {
+    padding: 2%;
+  }
+  .boxList {
+    width: 100%;
+  }
+  .descbox {
+    width: 80%;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  /* Styles for screens with width between 769px and 1024px (e.g. tablets) */
+  #titlebox {
+    padding: 3%;
+  }
+  .boxList {
+    width: 80%;
+  }
+  .descbox {
+    width: 60%;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  /* Styles for screens with width greater than 1024px (e.g. desktops) */
+  #titlebox {
+    padding: 5%;
+  }
+  .boxList {
+    width: 60%;
+  }
+  .descbox {
+    width: 40%;
+  }
+}
+
 a {
   color: var(--link);
 }
