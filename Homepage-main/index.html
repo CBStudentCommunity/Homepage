@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CBSC</title>
+    <meta name="description" content="Our first page" />
+    <link rel="stylesheet" href="src/desktop.css" />
+  </head>
+  <body>
+    <div id="navbar">
+      <div class="navbutton">
+        <a href="index.html"><i icon-name="home" class="icon"></i>Home</a>
+      </div>
+      <div class="navbutton">
+        <a href="blog.html"><i icon-name="newspaper" class="icon"></i>News</a>
+      </div>
+      <div class="navbutton">
+        <a href="tools.html"><i icon-name="package" class="icon"></i>Tools</a>
+      </div>
+      <div class="navbutton">
+        <a href="smp.html" id="mc"
+          ><i icon-name="sword" class="icon"></i>Minecraft</a
+        >
+      </div>
+      <div class="navbutton">
+        <a href="clubs.html"
+          ><i icon-name="users" class="icon"></i>Join a Club!</a
+        >
+      </div>
+    </div>
+    <div id="titlebox">
+      <h1 style="color: #dedede">Colonel By Student Community</h1>
+      <div id="directory"></div>
+    </div>
+    <div class="boxList">
+      <div class="descbox">
+        <h2>Welcome to the Colonel By Student Community Website!</h2>
+        <p>
+          You can find tools, info, and communications platforms related and
+          dedicated to the Colonel By Student Community here, as well as
+          information on our school minecraft server.
+        </p>
+      </div>
+      <div class="descbox">
+        <h2>Who we are</h2>
+        <p>
+          We are a group of students focused on creating an interconnected
+          online community for the Students of Colonel By Secondary School
+        </p>
+        <p>We are, and will always be For Students, By Students</p>
+      </div>
+    </div>
+    <div class="boxList">
+      <div class="box">
+        <a href="blog.html"><h3>Blog + Newspaper</h3></a>
+      </div>
+      <div class="box">
+        <a href="smp.html" style="color: #70b433"><h3>Minecraft Server</h3></a>
+      </div>
+      <div class="box">
+        <a href="tools.html"><h3>Tools + Guides</h3></a>
+      </div>
+    </div>
+    <div
+      id="comunicationsBox"
+      class="box"
+      style="height: auto; padding: 2%; width: 90%"
+    >
+      <h3>Come chat with fellow students on the CBSC Discord Server!</h3>
+      <div style="padding: 1%">
+        <img
+          src="img/discord-mark-white.svg"
+          alt="discord logo"
+          height="10%"
+          width="10%"
+        />
+      </div>
+      <p>
+        To fully experience all that the CBSC has to offer, join our discord
+        server to chat with students, get homework help and access to our
+        minecraft server
+      </p>
+      <a
+        href="https://docs.google.com/forms/d/e/1FAIpQLSc-U5Mp3PD_iYifAFs4Oo7MsYrkbx3tLf1TEGgQL3LoISGv_Q/viewform?usp=sf_link"
+        target="_blank"
+        >Click here to join the Server</a
+      >
+    </div>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+      lucide.createIcons();
+    </script>
+    <script>
+      var theme = document.getElementsByTagName("link")[0];
+      if (
+        navigator.userAgent.match(/Android/i) ||
+        navigator.userAgent.match(/iPhone/i)
+      ) {
+        theme.setAttribute("href", "src/mobile.css");
+        console.log("Set CSS to Mobile");
+      } else {
+        theme.setAttribute("href", "src/desktop.css");
+        console.log("Set CSS to Desktop");
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CBSC</title>
+    <meta name="description" content="Minecraft Information" />
+    <link rel="stylesheet" href="src/desktop.css" />
+  </head>
+  <body>
+    <div id="navbar">
+      <div class="navbutton">
+        <a href="index.html"><i icon-name="home" class="icon"></i>Home</a>
+      </div>
+      <div class="navbutton">
+        <a href="blog.html"><i icon-name="newspaper" class="icon"></i>News</a>
+      </div>
+      <div class="navbutton">
+        <a href="tools.html"><i icon-name="package" class="icon"></i>Tools</a>
+      </div>
+      <div class="navbutton">
+        <a href="smp.html" id="mc"
+          ><i icon-name="sword" class="icon"></i>Minecraft</a
+        >
+      </div>
+      <div class="navbutton">
+        <a href="clubs.html"
+          ><i icon-name="users" class="icon"></i>Join a Club!</a
+        >
+      </div>
+    </div>
+    <div
+      id="titlebox"
+      style="background-image: url(/img/CB.png); background-position-x: center"
+    >
+      <h1 style="color: #dedede">Tools, tips and guides for Students of Colonel By</h1>
+      <div id="directory"></div>
+    </div>
+    <h1 style="text-align: center;">This Section is under Construction currently as we are choosing and compiling a list of tools and guides for students. If you want to help out, please reach out on the Colonel By Discord Server</h1>
+    <div class="boxList">
+        <div class="box" style="width: 50%;"><h2>Tools for in school and out</h2>
+        <h3>As always, the <a href="https://ocdsb.elearningontario.ca/d2l/home" target="_blank">OCDSB student portal</a> contains useful links and resources for students in school and out </h3>
+        <h3>Under Construction</h3>
+        </div>
+        <div class="box" style="width: 50%;"><h2>Guides and information</h2></div>
+    </div>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+      lucide.createIcons();
+    </script>
+    <script>
+      var theme = document.getElementsByTagName("link")[0];
+      if (
+        navigator.userAgent.match(/Android/i) ||
+        navigator.userAgent.match(/iPhone/i)
+      ) {
+        theme.setAttribute("href", "src/mobile.css");
+        console.log("Set CSS to Mobile");
+      } else {
+        theme.setAttribute("href", "src/desktop.css");
+        console.log("Set CSS to Desktop");
+      }
+    </script>
+  </body>
+</html>
