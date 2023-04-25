@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CBSC</title>
+    <meta name="description" content="School Newspaper and blog" />
+    <link rel="stylesheet" href="src/desktop.css"/>
+  </head>
+  <body>
+    <div id="navbar">
+      <div class="navbutton">
+        <a href="index.html">
+          <i icon-name="home" class="icon"></i>Home</a>
+      </div>
+
+      <div class="navbutton">
+        <a href="blog.html">
+          <i icon-name="newspaper" class="icon"></i>News</a>
+      </div>
+
+      <div class="navbutton">
+        <a href="tools.html">
+          <i icon-name="package" class="icon"></i>Tools</a>
+      </div>
+
+      <div class="navbutton">
+        <a href="smp.html" id="mc">
+          <i icon-name="sword" class="icon"></i>Minecraft</a>
+      </div>
+
+      <div class="navbutton">
+        <a href="clubs.html">
+          <i icon-name="users" class="icon"></i>Join a Club!</a>
+      </div>
+      
+    </div>
+    <div id="titlebox">
+        <h1 style="color: #dedede;">CBSC News</h1>
+        <div id="directory">
+        </div>
+    </div>
+    <div id="blogger">
+    </div>
+    <script src="src/blogger.js"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+      lucide.createIcons();
+    </script>
+    <script>
+      var theme = document.getElementsByTagName("link")[0];
+      if (
+        navigator.userAgent.match(/Android/i) ||
+        navigator.userAgent.match(/iPhone/i)
+      ) {
+        theme.setAttribute("href", "src/mobile.css");
+        console.log("Set CSS to Mobile");
+      } else {
+        theme.setAttribute("href", "src/desktop.css");
+        console.log("Set CSS to Desktop");
+      }
+    </script>
+    </body>
+    </html>
