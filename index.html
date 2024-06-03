@@ -6,67 +6,103 @@
     <link rel="stylesheet" href="src/desktop.css" />
   </head>
   <body>
-    <div id="navbar">
-      <div class="navbutton" onclick="window.location.href='index.html'">
-        <a href="index.html"><i icon-name="home" class="icon"></i>Home</a>
-      </div>
-      <div class="navbutton" onclick="window.location.href='blog.html'">
-        <a href="blog.html"><i icon-name="newspaper" class="icon"></i>News</a>
-      </div>
-      <div class="navbutton" onclick="window.location.href='tools.html'">
-        <a href="tools.html"><i icon-name="package" class="icon"></i>Tools</a>
-      </div>
-      <div class="navbutton" onclick="window.location.href='smp.html'">
-        <a href="smp.html" id="mc"
-          ><i icon-name="sword" class="icon"></i>Minecraft</a
-        >
-      </div>
-      <div class="navbutton" onclick="window.location.href='clubs.html'">
-        <a href="clubs.html"
-          ><i icon-name="users" class="icon"></i>Join a Club!</a
-        >
-      </div>
-    </div>
-    <div id="titlebox">
-      <h1 style="color: #dedede">Colonel By Student Community</h1>
-      <div id="directory"></div>
-    </div>
-    <div class="boxList">
-      <div class="descbox">
-        <h2>Welcome to the Colonel By Student Community Website!</h2>
-        <p>
-          You can find tools, info, and communications platforms related and
-          dedicated to the Colonel By Student Community here, as well as
-          information on our school minecraft server.
-        </p>
-      </div>
-      <div class="descbox">
-        <h2>Who we are</h2>
-        <p>
-          We are a group of students focused on creating an interconnected
-          online community for the Students of Colonel By Secondary School
-        </p>
-        <p>We are, and will always be For Students, By Students</p>
-      </div>
-    </div>
-    <div class="boxList">
-      <div class="box">
-        <a href="blog.html"><h3>Blog + Newspaper</h3></a>
-      </div>
-      <div class="box">
-        <a href="smp.html" style="color: #70b433"><h3>Minecraft Server</h3></a>
-      </div>
-      <div class="box">
-        <a href="tools.html"><h3>Tools + Guides</h3></a>
-      </div>
-    </div>
-    <div
+    <header>
+      <!-- This is the header container -->
+      <!-- Use a custom classname for all previous div element so as to not make changes to the Reset CSS declaration -->
+      <nav>
+        <!--This wraps the navigation items-->
+
+        <ul id="navbar" class="custom">
+          <!-- This is the navigation items -->
+          <li
+            class="navbutton custom"
+            onclick="window.location.href='index.html'"
+          >
+            <a href="index.html"><i icon-name="home" class="icon"></i>Home</a>
+          </li>
+
+          <li
+            class="navbutton custom"
+            onclick="window.location.href='blog.html'"
+          >
+            <a href="blog.html"
+              ><i icon-name="newspaper" class="icon"></i>News</a
+            >
+          </li>
+
+          <li
+            class="navbutton custom"
+            onclick="window.location.href='tools.html'"
+          >
+            <a href="tools.html"
+              ><i icon-name="package" class="icon"></i>Tools</a
+            >
+          </li>
+
+          <li
+            class="navbutton custom"
+            onclick="window.location.href='smp.html'"
+          >
+            <a href="smp.html" id="mc"
+              ><i icon-name="sword" class="icon"></i>Minecraft</a
+            >
+          </li>
+
+          <li
+            class="navbutton custom"
+            onclick="window.location.href='clubs.html'"
+          >
+            <a href="clubs.html"
+              ><i icon-name="users" class="icon"></i>Join a Club!</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="titlebox" class="custom">
+        <h1 style="color: #dedede">Colonel By Student Community</h1>
+        <div id="directory"></div>
+      </section>
+      <section class="boxList" class="custom">
+        <article class="descbox">
+          <h2>Welcome to the Colonel By Student Community Website!</h2>
+          <p>
+            You can find tools, info, and communications platforms related and
+            dedicated to the Colonel By Student Community here, as well as
+            information on our school minecraft server.
+          </p>
+        </article>
+        <div class="descbox custom">
+          <h2>Who we are</h2>
+          <p>
+            We are a group of students focused on creating an interconnected
+            online community for the Students of Colonel By Secondary School
+          </p>
+          <p>We are, and will always be For Students, By Students</p>
+        </div>
+      </section>
+      <section class="boxList custom">
+        <div class="box custom">
+          <a href="blog.html"><h3>Blog + Newspaper</h3></a>
+        </div>
+        <div class="box custom">
+          <a href="smp.html" style="color: #70b433"
+            ><h3>Minecraft Server</h3></a
+          >
+        </div>
+        <div class="box custom">
+          <a href="tools.html"><h3>Tools + Guides</h3></a>
+        </div>
+      </section>
+    </main>
+    <footer
       id="comunicationsBox"
-      class="box"
+      class="box custom"
       style="height: auto; padding: 2%; width: 90%"
     >
       <h3>Come chat with fellow students on the CBSC Discord Server!</h3>
-      <div style="padding: 1%">
+      <div class="custom" style="padding: 1%">
         <img
           src="img/discord-mark-white.svg"
           alt="discord logo"
@@ -84,7 +120,7 @@
         target="_blank"
         >Click here to join the Server</a
       >
-    </div>
+    </footer>
     <script src="https://unpkg.com/lucide@latest"></script>
     <script>
       lucide.createIcons();

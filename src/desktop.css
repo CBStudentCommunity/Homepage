@@ -12,10 +12,11 @@
 }
 
 /*Reset CSS*/
-div {
+
+div, .custom {
   margin: 0;
-	padding: 0;
-	border: 0;
+  padding: 0;
+  border: 0;
   border-radius: 5px;
 }
 img {
@@ -82,11 +83,12 @@ to {background-position-x: -100px 0px;background-size:150%;}
 }
 /*^homepage scrolling background animation^*/
 #navbar {
+  background-color: var(--bg1);
   display: flex;
   flex-direction: row;
-  background-color: var(--bg1);
-  width: 100%;
+  list-style: none;
   margin: 5px;
+  width: 100%;
 }
 
 #mc {
